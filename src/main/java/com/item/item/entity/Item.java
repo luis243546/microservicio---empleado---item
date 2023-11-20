@@ -9,6 +9,7 @@ public class Item {
 
 	private Integer precio;
 
+
     public Item() {
     }
 
@@ -16,6 +17,7 @@ public class Item {
         this.empleado = empleado;
         this.precio = precio;
     }
+    
 
     public Empleado getEmpleado() {
         return empleado;

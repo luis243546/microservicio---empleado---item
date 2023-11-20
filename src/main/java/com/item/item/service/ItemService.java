@@ -10,5 +10,5 @@ import com.item.item.entity.Item;
 public interface ItemService {
     public List<Item>finAll();
 
-    public Item findById(Long id);
+    public Item findById(int id);
 }

@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.item.item.entity.Item;
@@ -18,4 +19,10 @@ public class ItemController {
     public List<Item>findAll(){
         return itemService.finAll();
     }
+
+    @GetMapping("/enlistar/{id}")
+    public Item findById(@PathVariable int id){
+        return itemService.findById(id);
+    }
+
 }

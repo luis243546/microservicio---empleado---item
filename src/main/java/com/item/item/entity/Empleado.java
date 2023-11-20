@@ -3,17 +3,17 @@ package com.item.item.entity;
 import java.time.LocalDate;
 
 public class Empleado {
-    private Long dni;
+    private int dni;
 	private String nombre;
 	private String ap_pat;
 	private String ap_mat;
 	private Double horas_lab;
 	private LocalDate fecha_nac;
     
-    public Long getDni() {
+    public int getDni() {
         return dni;
     }
-    public void setDni(Long dni) {
+    public void setDni(int dni) {
         this.dni = dni;
     }
     public String getNombre() {
